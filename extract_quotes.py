@@ -50,10 +50,9 @@ def generate_quote_with_gemini(text_chunk, api_key=None):
     
     # The prompt for generating quotes
     prompt = f"""
-    Based on the following text, create an inspirational thought-of-the-day quote that is 
-    between 250-500 characters. The quote should be profound, insightful, and 
-    standalone (not requiring context to understand).
-    
+    Based on the text given below, create an inspirational quote on product management. 
+    The length of the quote should absolutely never be less than 200 characters or more than 250 characters.  
+    The quote should be insightful, standalone (not requiring context to understand).    
     The quote should feel original and not directly copied from the source text.
     
     Text:
